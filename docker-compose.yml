@@ -2,7 +2,7 @@ version: "2"
 
 services:
 
-  nginx"
+  nginx:
     build: webserver
     image: nginx:alpine
     ports: 80:8080
