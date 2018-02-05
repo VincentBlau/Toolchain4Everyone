@@ -1,7 +1,6 @@
-version: "2"
+version: '2'
 
 services:
-
   nginx:
     image: nginx:alpine
     ports: 
@@ -10,7 +9,8 @@ services:
     - ./code:/code
     - ./site.conf:/etc/nginx.d/site.conf
     - ./nginx/html:/usr/share/nginx/html
- db:
+
+  db:
     build: db
     restart: unless-stopped
     volumes:
